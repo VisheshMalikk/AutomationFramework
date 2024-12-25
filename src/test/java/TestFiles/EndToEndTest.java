@@ -31,6 +31,7 @@ public class EndToEndTest extends BaseTest {
 		ConfirmationPage confirmPage = checkoutPage.placeOrder();
 		String msg = confirmPage.fnVerifyConfirmationMsg();
 		Assert.assertEquals(msg, "THANKYOU FOR THE ORDER.");
+		System.out.println("Congrats : Vishesh bought Adidas shoes : " + productName);
 	}
 	
 	
